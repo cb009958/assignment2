@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*this is for main picture and nav bar the animals and plants page
+this css styling makes sure that the navigation bar is on top of the main picture*/
+.animals {
+    width: 100%;
+    height: 100%;
+    background-image:url(./images/animals.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*this is for  main picture and nav bar the activities page*/
+.activities{
+    width: 100%;
+    height: 100%;
+    background-image:url(./images/activitiesmain.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*this is the text on top of the main picture of animals&plants page*/
+.opening{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+.line{
+    width:150px;
+    height: 4px;
+    background: #010101;
+    margin:10px auto;
+    border-radius: 5px;
+}
+
+.opening h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: /*#72b89d*/ rgb(255, 255, 255);
+}
+
+ul{
+    list-style: none;
+}
+
+.nav_links{
+    display: flex;
+    align-items: center;
+    color: /*#72b89d*/ rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.nav_links li{
+    margin: 0 30px;
+}
+
+nav a{
+    color: /*#2c6852*/rgb(255, 255, 255);
+}
+
+/*activities page*/
+.mainn_title{
+    text-align: center;
+    font-size: 4vmin;
+    color:#23493b;
+}
+
+.para_intro{
+    padding: 2%;
+    text-align:justify;
+    color:rgb(21, 75, 39);
+    font-size: 3vmin;
+}
+
+.line2{
+    width: 150px;
+    height: 4px;
+    background-color: #23493b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/*activities page first section */
+.details{
+    width: 90%;
+    margin: 90px auto;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:fit-content;
+}
+
+.details .row{
+    margin-top: 50px;  
+}
+
+h4, a{
+    font-size: 3vmin;
+    color: #2c6852;
+    margin: 20px auto;
+    text-align: center;
+    margin: auto;
+}
+
+h3{
+    font-size: 4vmin;
+    color: /*#49c2a8*/ rgb(255, 255, 255);
+    margin: 20px auto;
+}
+
+/*animals and plants page the first section*/
+.preview{
+    width: 100%;
+    margin: 0;
+    background-color: white;
+}
+
+.preview h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #11641f;
+}
+
+.preview h3{
+    font-size: 5vmin;
+    color:#11641f;
+}
+
+.preview .row,.col{
+    margin: 2%;
+}
+
+.preview p{
+    width: 250px;
+    height: 5%;
+    text-align: center;
+    font-size: 3vmin;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.row{
+    align-items: center;
+}
+
+.row .col img{
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+/*the plants table*/
+.table, th, td{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.table{
+    border-collapse: collapse;
+}
+
+th{
+    height: 70px auto;
+    background-color: #47b38b;
+    color: aliceblue;
+}
+
+tr:nth-child(even) {
+    background-color: #b5e79ed8;
+}
+
+td img{
+    width: 150px;
+    height: 150px;
+}
+
+.plants{
+    margin: 10%;
+}
+
+/*contact us page*/
+.contact{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h1{
+    margin:40%;
+    color:#ffffff;
+    text-align: center;
+    font-size: 8vmin;
+}
+
+.info h1{
+    margin-bottom: 30px;
+    margin-top: 50px;
+    color:#23493b;
+    text-align: center;
+    font-size: 6vmin;
+}
+
+.info p,ul{
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 70%;
+}
+
+.form_contactus{
+    border-radius: 5px;
+    background-color: #b3f8c8;
+    padding: 5%;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type=text],textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize:vertical;
+}
+
+/*Purchase and Donate pages*/
+.purchase{
+    width: 100%;
+    height: 100%;
+    background-image:url(./images/purchase.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.start h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+footer {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #23493b;
+}
+
+footer li a{
+    color: aliceblue;
+}
+
+footer li a:hover{
+    color:#0088a9;
+    cursor: hand;
+}
+
+body{
+    margin: 0;
+}
+
+@media only screen and (max-width:850px){
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top:30px;
+        left:30px;
+        font-size: large;
+    }
+    .nav_links{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        font-size: large;
+    }
+    .nav_links li{
+        margin: 30px auto;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+}

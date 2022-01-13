@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/second.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content h1{
+    font-size: 50px;
+    margin-top: 200px;
+    margin-bottom: 170px;
+    color: #adbdb7;
+}
+
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color:  white;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav_links{
+    display: flex;
+    align-items: top;
+    color: white;
+    font-weight: bold;
+}
+
+.nav_links li{
+    margin: 0 30px;
+}
+
+nav a{
+    color: white;
+}
+
+.first_para{
+    background-color: #adbdb7;
+    padding: 5%;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 4vmin;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    margin: 5%;
+
+}
+
+.secondpart{
+    background-color: #ffffff;
+    color: #585252;
+    align-items: center;
+    font-size: 4vmin;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 5%;
+}
+
+
+footer {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #23493b;
+}
+
+footer li a{
+    color: aliceblue;
+}
+
+footer li a:hover{
+    color:#0088a9;
+    cursor: hand;
+}
+
+body{
+    margin: 0;
+}
+
+@media only screen and (max-width:850px){
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top:30px;
+        left:30px;
+    }
+    .nav_links{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+    .nav_links li{
+        margin: 30px auto;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+}
